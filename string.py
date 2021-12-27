@@ -7,31 +7,52 @@ print ('-'*50)
 teks = str(input('Teks : '))
 print ('-'*50)
 
-#pilihan manipulasi
-print ('\t menu')
-print ('\t 1. capitalize')
-print ('\t 2. uppercase')
-print ('\t 3. lowercase')
-print ('\t 4. replace')
+print ('Konfirmasi manipulasi data')
+print ('\t 1. yes')
+print ('\t 2. no')
+pilihan = int(input('apakah ingin lanjut ? masukan nilai yang ada pada pilihan : '))
 print ('-'*50)
-pilihan = int(input('pilih sesuai nomor pada menu : '))
+while pilihan <1 or pilihan >2:
+        print ('Masukan pilihan yang ada pada menu')
+        pilihan = int(input('apakah ingin lanjut ? masukan nilai yang ada pada pilihan : '))
+while pilihan != 0:
+        if pilihan == 1:
+            #pilihan manipulasi
+            print ('\t Menu')
+            print ('\t 1. capitalize')
+            print ('\t 2. uppercase')
+            print ('\t 3. lowercase')
+            print ('\t 4. replace')
+            print ('-'*50)
+            pilihan = int(input('pilih sesuai nomor pada menu : '))
+            #looping
+            while pilihan >4 or pilihan <1:
+                print ('Masukan pilihan yang ada pada menu')
+                pilihan = int(input('pilih sesuai nomor pada menu : '))
+            while pilihan !=0:    
+                if pilihan == 1:
+                        print (teks.capitalize())
+                        pilihan = teks
+                    
+                elif pilihan == 2:
+                        print (teks.upper())
+                        pilihan = teks
+                        
+                elif pilihan == 3:
+                        print (teks.lower())
+                        pilihan = teks
 
-#looping
-while pilihan >=1 or pilihan <=4:
-    kondisi = pilihan
-    if kondisi == 1:
-        print ('1')
-
-    elif kondisi == 2:
-        print ('2')
-
-    elif kondisi == 3:
-        print ('3')
-
-    elif kondisi == 4:
-        print ('4')
-
-    else :
-        print ('masukan nilai yang benar')
-    
-    pilihan <= 1
+                elif pilihan == 4:
+                        replace = teks.replace(input ('ganti menjadi : '))
+                        print (replace)
+                        pilihan = teks
+                        
+                print ('\t menu')
+                print ('\t 1. capitalize')
+                print ('\t 2. uppercase')
+                print ('\t 3. lowercase')
+                print ('\t 4. replace')
+                print ('-'*50)
+                pilihan = int(input('pilih sesuai nomor pada menu : '))
+else :
+    print ('Terimakasih')
