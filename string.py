@@ -15,6 +15,7 @@ print ('-'*50)
 while pilihan <1 or pilihan >2:
         print ('Masukan pilihan yang ada pada menu')
         pilihan = int(input('apakah ingin lanjut ? masukan nilai yang ada pada pilihan : '))
+        print ('-'*50)
 while pilihan != 0:
         if pilihan == 1:
             #pilihan manipulasi
@@ -23,10 +24,11 @@ while pilihan != 0:
             print ('\t 2. uppercase')
             print ('\t 3. lowercase')
             print ('\t 4. replace')
+            print ('\t 5. exit')
             print ('-'*50)
             pilihan = int(input('pilih sesuai nomor pada menu : '))
             #looping
-            while pilihan >4 or pilihan <1:
+            while pilihan >5 or pilihan <1:
                 print ('Masukan pilihan yang ada pada menu')
                 pilihan = int(input('pilih sesuai nomor pada menu : '))
             while pilihan !=0:    
@@ -43,16 +45,19 @@ while pilihan != 0:
                         pilihan = teks
 
                 elif pilihan == 4:
-                        replace = teks.replace(input ('ganti menjadi : '))
+                        replace = teks.replace(str(input ('asal kata : ')),str(input ('menjadi : ')))
                         print (replace)
                         pilihan = teks
-                        
-                print ('\t menu')
+
+                else :
+                        print ('TERIMAKASIH')
+                        break
+                print ('\t Menu')
                 print ('\t 1. capitalize')
                 print ('\t 2. uppercase')
                 print ('\t 3. lowercase')
                 print ('\t 4. replace')
+                print ('\t 5. exit')
                 print ('-'*50)
                 pilihan = int(input('pilih sesuai nomor pada menu : '))
-else :
-    print ('Terimakasih')
+        
