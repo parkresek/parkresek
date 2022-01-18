@@ -18,9 +18,26 @@ elif pilihan == 2:
     luas = s**2
     print ("\t luas persegi = ",luas)
 elif pilihan == 3:
-    p = int(input ("\t masukan nilai panjang = "))
-    l = int(input ("\t masukan nilai lebar = "))
-    luas = p*l
-    print ("\t luas persegi = ",luas)
+    print ('mencari')
+    print (' 1. luas \n 2. panjang \n 3. lebar')
+    mencari = int (input('masukan pilihan = '))
+    if mencari == 1:
+        p = int(input('panjang sisi persegi panjang = '))
+        l = int(input('lebar persegi panjang = '))
+        luas = p*l
+        print ('luas persegi panjang = ',luas)
+    elif mencari == 2:
+        luas = int(input('luas persegi panjang = '))
+        l = int(input('lebar persegi panjang = '))
+        panjang = luas/l
+        print ('panjang persegi panjang = ',panjang)
+    elif mencari == 3:
+        luas = int(input('luas persegi panjang = '))
+        p = int(input('panajag persegi panjang = '))
+        lebar = luas/p
+        print ('lebar persegi panjang = ',lebar)
+    else :
+        print ('masukan salah')
+        
 else :
     print ("selesai")
