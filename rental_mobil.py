@@ -33,22 +33,23 @@ if mobil == 1:
     waktu = kembali-lama
     total = waktu*tarif
     print ('mobil = Fajerox')
-    print ('lama rental = ',waktu,' hari')
-    print ('tarif = ',total)
+    print ('lama rental = ',abs(waktu),' hari')
+    print ('tarif = ',abs(total))
 elif mobil == 2:
     tarif = 150000
     waktu = kembali-lama
     total = waktu*tarif
     print ('mobil = Abanza')
-    print ('lama rental = ',waktu,' hari')
-    print ('tarif = ',total)
+    print ('lama rental = ',abs(waktu),' hari')
+    print ('tarif = ',abs(total))
 elif mobil == 3:
     tarif = 100000
     waktu = kembali-lama
     total = waktu*tarif
     print ('mobil = seniah')
-    print ('lama rental = ',waktu,' hari')
-    print ('tarif = ',total)
+    print ('lama rental = ',abs(waktu),' hari')
+    print ('tarif = ',abs(total))
 else :
     print ('Pilihan tidak ada')
+    
     
