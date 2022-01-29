@@ -45,6 +45,8 @@ while pilihan >5 or pilihan <1:
         pilihan = int(input('pilih sesuai nomor pada menu : '))
 while pilihan !=0:    
         if pilihan == 1:
+            #bantuan = str(input('índex ke : ')) 
+            indexke = [str(input('índex ke : '))]
             print (larik.capitalize())
             pilihan = larik
                     
